@@ -109,3 +109,11 @@ class Polygon(PointGroup):
         self.points.append(self.points[0]) # Our polygon must have one duplicate - we put it back now
         n = len(self.points)
         print(f'The old polygon had {oldn} points, now we only have {n}.')
+
+    def calculateArea(self):
+        for i in self.points: 
+            print(self.points[i])
+        print("Implement me baby")
+
+    def findCentroid(self):
+        ("find me daddy")
