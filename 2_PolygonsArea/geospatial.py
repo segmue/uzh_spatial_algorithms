@@ -118,6 +118,7 @@ class Polygon(PointGroup):
             area = area + a
         area =  abs(0.5 * area)
         print(area)
+        return area
 
 
     def findCentroid(self):
