@@ -116,7 +116,7 @@ class Polygon(PointGroup):
             next_index = (i + 1) % len(self.points)
             a = self.points[i].x * self.points[next_index].y - self.points[next_index].x * self.points[i].y
             area = area + a
-        area =  -(0.5 * area)
+        area =  abs(0.5 * area)
         print(area)
 
 
