@@ -111,9 +111,14 @@ class Polygon(PointGroup):
         print(f'The old polygon had {oldn} points, now we only have {n}.')
 
     def calculateArea(self):
-        for i in self.points: 
-            print(self.points[i])
-        print("Implement me baby")
+        area = 0
+        for i in range(len(self.points)):
+            next_index = (i + 1) % len(self.points)
+            a = self.points[i].x * self.points[next_index].y - self.points[next_index].x * self.points[i].y
+            area = area + a
+        area =  -(0.5 * area)
+        print(area)
+
 
     def findCentroid(self):
         ("find me daddy")
